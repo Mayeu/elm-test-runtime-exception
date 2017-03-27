@@ -2,7 +2,7 @@
 
 Minimal repository illustrating an issue I face with elm-test.
 
-When I run elm-test, I get a runtime exception:
+This is on Mac OS X El Capitan 10.11.6:
 ```
 $ node --version
 v7.7.3
@@ -27,6 +27,8 @@ The test run failed because it encountered a runtime exception:
     at /usr/local/lib/node_modules/elm-test/bin/elm-test:303:33
     at process._tickCallback (internal/process/next_tick.js:109:7)
 ```
+
+It does also fail on Travis with GNU/Linux and [Node.js 4](https://travis-ci.org/Mayeu/elm-test-runtime-exception/jobs/215677828), or [Node.js 6](https://travis-ci.org/Mayeu/elm-test-runtime-exception/jobs/215677829).
 
 ## Usage
 
