@@ -1,6 +1,8 @@
-module Main exposing (..)
+port module Main exposing (..)
 
 import Legacy.ElmTest as ElmTest exposing (..)
+import Test.Runner.Node exposing (run, TestProgram)
+import Json.Encode exposing (Value)
 
 
 allTests : Test
@@ -9,5 +11,9 @@ allTests =
         [ equals 1 1 ]
 
 
+main : TestProgram
 main =
-    ElmTest.runSuite allTests
+    run emit allTests
+
+
+port emit : ( String, Value ) -> Cmd msg
