@@ -2,6 +2,8 @@
 
 Minimal repository illustrating an issue I face with elm-test.
 
+Thanks to [@mgold](https://github.com/mgold) this has been fixed via [#1](https://github.com/Mayeu/elm-test-runtime-exception/pull/1)!
+
 This is on Mac OS X El Capitan 10.11.6:
 ```
 $ node --version
